@@ -1,4 +1,14 @@
 <h1>{{ title }}</h1>
+<p>{{ message}}</p>
+<!-- {{ request }}
+{{ user }} -->
 
-{{ request }}
-{{ user }}
+<form method="POST" action="">{% csrf_token %}
+<!-- autos to GET -->
+	{{ form.as_p }}
+<input type="submit" value="add">
+<!-- <input type="text">
+
+<input type="text"> -->
+
+</form>

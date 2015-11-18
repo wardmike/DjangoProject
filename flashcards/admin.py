@@ -7,7 +7,7 @@ from .models import User
 from .models import Flashcard
 
 class FlashcardAdmin(admin.ModelAdmin):
-	list_display = ["english_word", "spanish_word"]
+	list_display = ["spanish_word", "english_word"]
 	form = FlashcardForm
 	#class Meta:
 	#	model = Flashcard

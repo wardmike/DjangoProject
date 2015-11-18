@@ -7,7 +7,7 @@ class Flashcard(models.Model):
 	spanish_word = models.CharField(max_length=20)
 
 	def __unicode__(self): #__str__ for Python 3
-		return self.english_word
+		return self.spanish_word
 
 class User(models.Model):
 	email = models.EmailField(default='', blank=True, null=True)
