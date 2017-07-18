@@ -19,9 +19,11 @@ from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.contrib import admin
 
+from flashcards import views as flashcard_views
+
 urlpatterns = [
-	url(r'^$', 'flashcards.views.home', name="home"),
-	url(r'^contact/', 'flashcards.views.contact', name="contact"),
+	url(r'^$', flashcard_views.home),
+	url(r'^contact/', flashcard_views.contact),
     url(r'^admin/', include(admin.site.urls)),
 ]
 
